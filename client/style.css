@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #3db36b;
+    /* -- makes a variable */
+}
+
 body {
     font-family: 'Arimo', sans-serif;
     font-size: 20px;
