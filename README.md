@@ -1,6 +1,22 @@
 # Front End Starter
 
-## Overview
+## **_Serena Hasler_**
+### **AAS, Computer Programming, 5/2020**
+
+1. C#
+2. Java
+3. SQL
+4. JavaScript
+    1. GitHub
+    2. Git
+5. Python
+
+[![a random image](https://source.unsplash.com/random/200x300)](https://www.cnn.com)
+[cnn](https://www.cnn.com)
+
+
+
+
 
 This template repository contains several opinionated, 'starter' files and settings to help students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
 
