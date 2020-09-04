@@ -27,7 +27,7 @@ p {
     font-size: 1.25em;
 }
 
-nav{
+nav {
     padding: 2rem 1rem;
 }
 
@@ -42,13 +42,21 @@ li {
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* DirectChild Selector */
+nav > a {
+    border: solid thin var(--primary-color);
+    padding: 1rem 1.5rem;
 }
 
 /* unvisited link */
 a:link {
     color: black;
 }
-  /* visited link */
+
+/* visited link */
 a:visited {
     color: black;
 }
@@ -63,13 +71,18 @@ a:active {
     color: black;
 }
 
+nav > a:link,
+nav > a:visited {
+    color: var(--primary-color)
+}
+
 .fas {
     font-size: 2.5em;
 }
 
 /* Utility Classes */
-.box{
-    background-color: rgba(255,255,255,0.9);
+.box {
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 1.5rem;
 }
 
