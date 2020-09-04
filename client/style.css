@@ -48,7 +48,6 @@ a {
 /* DirectChild Selector */
 nav > a {
     border: solid thin var(--primary-color);
-    padding: 1rem 1.5rem;
 }
 
 /* unvisited link */
@@ -73,7 +72,7 @@ a:active {
 
 nav > a:link,
 nav > a:visited {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .fas {
@@ -86,6 +85,13 @@ nav > a:visited {
     padding: 1.5rem;
 }
 
+.button {
+/* in line block will keep default of inline while allowing for vertical margin. */
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 1rem 1.5rem;
+}
+
 .flex {
     display: flex;
 }
@@ -96,4 +102,15 @@ nav > a:visited {
 
 .flex--justify-space-around {
     justify-content: space-around;
+}
+
+#cta {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#hero {
+    background: url("./images/hero-bg.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 2rem;
 }
