@@ -38,19 +38,22 @@
     </nav>
 
     <form>
-      <div><label for="name">Name</label><input type="text" id="name" /></div>
+      <div><label class="screen-reader-text" for="name">Name</label><input type="text" id="name"
+        placeholder="Name" /></div>
       <div>
-        <label for="email">Email</label><input type="email" id="email" />
+        <label class="screen-reader-text" for="email">Email</label><input type="email" id="email"
+        placeholder="Email"/>
       </div>
       <div>
-        <label for="fone">Phone #</label><input type="tel" id="fone" />
+        <label class="screen-reader-text" for="fone">Phone #</label><input type="tel" id="fone"
+        placeholder="Phone #"/>
       </div>
       <div>
-        <label for="profilePic"></label><input type="file" id="profilePic" />
+        <label class="screen-reader-text" for="profilePic"></label><input type="file" id="profilePic" />
       </div>
 
-      <button>Submit</button>
-      <button type="reset">Reset</button>
+      <button class="button button--primary">Submit</button>
+      <button class="button button--warning" type="reset">Reset</button>
     </form>
 
     <script src="./scripts.js"></script>

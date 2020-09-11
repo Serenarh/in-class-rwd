@@ -1,129 +1,163 @@
 :root {
-    --primary-color: #3db36b;/* -- makes a variable */
+  --primary-color: #3db36b; /* -- makes a variable */
+  --secondary-color: #6d98ff;
+  --warning-color: #e2892c;
 }
 
 body {
-    font-family: 'Arimo', sans-serif;
-    font-size: 20px;
-    line-height: 1.15;
-    padding: 1rem 0;
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+  line-height: 1.15;
+  padding: 1rem 0;
 }
 
 h1 {
-    font-size: 3.052em;
-    margin: 0;
+  font-size: 3.052em;
+  margin: 0;
 }
 
 h2 {
-    font-size: 2.441em;
+  font-size: 2.441em;
 }
 
 h3 {
-    font-size: 1.953em;
+  font-size: 1.953em;
 }
 
 a,
 p {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
-nav {
-    padding: 2rem 1rem;
+nav,
+form {
+  padding: 2rem 1rem;
+}
+
+form {
+  margin: 0 auto;
+  width: 80vw;
 }
 
 ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 li {
-    list-style-type: none;
-    padding: 0.5rem 0;
+  list-style-type: none;
+  padding: 0.5rem 0;
 }
 
 a {
-    text-decoration: none;
-    text-transform: uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+input {
+  margin: 0.5rem 0;
+  width: 100%;
 }
 
 /* DirectChild Selector */
 nav > a {
-    border: solid thin var(--primary-color);
+  border: solid thin var(--primary-color);
 }
 
 /* unvisited link */
 a:link {
-    color: black;
+  color: black;
 }
 
 /* visited link */
 a:visited {
-    color: black;
+  color: black;
 }
 
-  /* mouse over link */
+/* mouse over link */
 a:hover {
-    color: black;
+  color: black;
 }
 
-  /* selected link */
+/* selected link */
 a:active {
-    color: black;
+  color: black;
 }
 
 nav > a:link,
 nav > a:visited {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .fas {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 /* Utility Classes */
 .box {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
 }
 
 .button {
-/* in line block will keep default of inline while allowing for vertical margin. */
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    padding: 1rem 1.5rem;
+  /* in line block will keep default of inline while allowing for vertical margin. */
+  display: inline-block;
+  margin: 0.5rem 0;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.button:not(:first-of-type) {
+  margin: 0 0.5rem;
+}
+
+.button--primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.button--warning {
+    background-color: var(--warning-color) ;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .flex--align-center {
-    align-items: center;
+  align-items: center;
 }
 
 .flex--justify-space-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 /* JS Classes */
 .is-collapsed {
-    height: 0;
-    transform: scaleY(0);
-    transition: all 0.4s linear;
+  height: 0;
+  transform: scaleY(0);
+  transition: all 0.4s linear;
 }
 
 .is-expanded {
-    height: 50vh;
-    transform: scaleY(1);
-    transition: all 0.4s linear;
+  height: 50vh;
+  transform: scaleY(1);
+  transition: all 0.4s linear;
+}
+
+.screen-reader-text {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
 }
 
 #cta {
-    background-color: var(--primary-color);
-    color: white;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 #hero {
-    background: url("./images/hero-bg.jpg") center center no-repeat;
-    background-size: cover;
-    padding: 2rem;
+  background: url("./images/hero-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 2rem;
 }
