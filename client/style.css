@@ -2,6 +2,7 @@
   --primary-color: #3db36b; /* -- makes a variable */
   --secondary-color: #6d98ff;
   --warning-color: #e2892c;
+  --danger-color: #ff635d;
 }
 
 body {
@@ -117,7 +118,7 @@ nav > a:visited {
 }
 
 .button--warning {
-    background-color: var(--warning-color) ;
+  background-color: var(--warning-color);
 }
 
 .flex {
@@ -139,10 +140,18 @@ nav > a:visited {
   transition: all 0.4s linear;
 }
 
+.is-error{
+    border: solid thin var(--danger-color);
+}
+
 .is-expanded {
   height: 50vh;
   transform: scaleY(1);
   transition: all 0.4s linear;
+}
+
+.is-success {
+    border: solid thin var(--primary-color);
 }
 
 .screen-reader-text {
