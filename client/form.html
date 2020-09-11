@@ -42,11 +42,11 @@
         placeholder="Name" required/></div>
       <div>
         <label class="screen-reader-text" for="email">Email</label><input type="email" id="email"
-        placeholder="Email" required/>
+        placeholder="Email" required pattern />
       </div>
       <div>
         <label class="screen-reader-text" for="fone">Phone #</label><input type="tel" id="fone"
-        placeholder="Phone #" required/>
+        placeholder="Phone #" pattern="[0-9]{10}" required/>
       </div>
       <div>
         <label class="screen-reader-text" for="profilePic"></label><input type="file" id="profilePic" />
@@ -55,7 +55,7 @@
       <button class="button button--primary">Submit</button>
       <button class="button button--warning" type="reset">Reset</button>
     </form>
-
-    <script src="./scripts.js"></script>
+    Set up to be able to use modules
+    <script src="./scripts.js" type ="module"></script>
   </body>
 </html>
