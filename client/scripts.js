@@ -1,7 +1,3 @@
-import { test } from "./validator.mjs";
-
-console.log(test());
-
 const nav = document.querySelector("nav");
 const inputs = document.querySelectorAll("input");
 
