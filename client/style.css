@@ -140,6 +140,21 @@ nav > a:visited {
   top: -9999px;
 }
 
+.text-button {
+  background-color: transparent;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.text-button--secondary {
+  color: var(--secondary-color);
+}
+
+.text-button--warning {
+  color: var(--warning-color);
+}
+
 /* JS Classes */
 .is-collapsed {
   height: 0;
