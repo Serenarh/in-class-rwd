@@ -1,4 +1,4 @@
-//Destructure a specific key in the imported ESModuel Object
+//Destructure a specific key in the imported ESModule Object
 import { nav, toggles, validation } from "./lib/index.js";
 
 nav();
